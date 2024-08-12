@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Галерея Леонардо да Вінчі";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg/300px-Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg" alt="Поклоніння волхвів" />
+        <p>Поклоніння волхвів</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://zimamagazine.com/wp-content/uploads/2019/01/London-1-1.jpg" alt="Мадонна в скелях" />
+        <p>Мадонна в скелях</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/322px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Ліза" />
+        <p>Мона Ліза</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg/480px-Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg" alt="Тайна вечеря" />
+        <p>Тайна вечеря</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Leonardo_da_Vinci_046.jpg/353px-Leonardo_da_Vinci_046.jpg" alt="Пані з горностаєм" />
+        <p>Пані з горностаєм</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/265px-Da_Vinci_Vitruve_Luc_Viatour.jpg" alt="Вітрувіанська людина" />
+        <p>Вітрувіанська людина</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Annunciation_%28Leonardo%29_%28cropped%29.jpg/480px-Annunciation_%28Leonardo%29_%28cropped%29.jpg" alt="Благовіщення" />
+        <p>Благовіщення</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Possible_Self-Portrait_of_Leonardo_da_Vinci.jpg" alt="Автопортрет Леонардо" />
+        <p>Автопортрет Леонардо</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Sainte_Anne_Leonard.jpg/1200px-Sainte_Anne_Leonard.jpg" alt="Богородиця і немовля зі святою Анною" />
+        <p>Богородиця і немовля зі святою Анною</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/371px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg" alt="Іван Хреститель" />
+        <p>Іван Хреститель</p>
+    </div>
+</div>
+
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .gallery-item {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery-item p {
+            margin: 8px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+</style>
